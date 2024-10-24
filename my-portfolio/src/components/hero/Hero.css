@@ -1,0 +1,133 @@
+.hero {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+
+}
+
+.hero img {
+    margin-top: 120px;
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: fadeSlideIn 2s forwards;
+
+}
+
+.hero h2 {
+    text-align: center;
+    width: 70%;
+    font-size: 50px;
+    font-weight: 500;
+
+}
+
+.hero h2 span {
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: fadeSlideIn 2s forwards, colorChange 3s infinite alternate;
+    background: linear-gradient(45deg, #ff6b6b, #ffd93d, #6b6bff);
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: 200% 200%;
+}
+
+.hero p {
+    width: 50%;
+    text-align: center;
+    font-size: 24px;
+    line-height: 40px;
+
+}
+
+.hero-action {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.hero-connect {
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #ff6b6b, #ffd93d, #6b6bff);
+    background-size: 200% 200%;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: fadeSlideIn 2s forwards, colorChange 3s infinite alternate;
+    transition: transform 0.3s;
+    font-weight: 500;
+
+}
+
+.hero-connect:hover {
+    border: 2px solid white;
+}
+
+.hero-resume {
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #ff6b6b, #ffd93d, #6b6bff);
+    background-size: 200% 200%;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: fadeSlideIn 2s forwards, colorChange 3s infinite alternate;
+    transition: transform 0.3s;
+    font-weight: 500;
+}
+
+.hero-resume:hover {
+    border: 2px solid white;
+}
+
+@media(max-width:768px) {
+    .hero img {
+        margin-top: 110px;
+        width: 150px;
+        height: 150px;
+        font-size: 50px;
+    }
+
+    .hero h1 {
+        margin-top: 50px;
+        width: 90%;
+        font-size: 50px;
+    }
+
+    .hero p {
+        width: 60%;
+        font-size: 18px;
+        line-height: 32px;
+        margin: 10px 0px;
+    }
+
+    .hero-action {
+        gap: 16px;
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 50px;
+    }
+
+    .hero-connect {
+        padding: 20px 30px;
+        border-radius: 40px;
+    }
+
+    .hero-resume {
+        padding: 20px 30px;
+        border-radius: 40px;
+    }
+}
